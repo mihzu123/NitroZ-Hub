@@ -2645,7 +2645,7 @@ end)
 
 
 
-        local ToggleCandy = Tabs.Main0:AddToggle("ToggleCandy", {Title = "Auto Farm Candy ( Only Max Level )", Default = false })
+        local ToggleCandy = Tabs.Main1:AddToggle("ToggleCandy", {Title = "Auto Farm Candy ( Only Max Level )", Default = false })
         ToggleCandy:OnChanged(function(Value)
            _G.AutoCandy = Value
         end)
@@ -2688,7 +2688,7 @@ end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-    local ToggleMobAura = Tabs.Main0:AddToggle("ToggleMobAura", {Title = "Kill Near | Mob Aura", Default = false })
+    local ToggleMobAura = Tabs.Main1:AddToggle("ToggleMobAura", {Title = "Kill Near | Mob Aura", Default = false })
     ToggleMobAura:OnChanged(function(Value)
         _G.AutoNear = Value
     end)
@@ -2727,7 +2727,7 @@ end)
       end)
 
 
-    local ToggleCastleRaid = Tabs.Main0:AddToggle("ToggleCastleRaid", {Title = "Auto Castle Raid | Pirates Castle", Default = false })
+    local ToggleCastleRaid = Tabs.Main1:AddToggle("ToggleCastleRaid", {Title = "Auto Castle Raid | Pirates Castle", Default = false })
     ToggleCastleRaid:OnChanged(function(Value)
         _G.CastleRaid = Value
     end)
@@ -2846,7 +2846,7 @@ function TPchest(P1)
 
 
 if Third_Sea then
-local ToggleChest = Tabs.Main0:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main1:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea3 = Value
 end)
@@ -2854,14 +2854,14 @@ Options.ToggleChest:SetValue(false)
 end
 
 if Second_Sea then
-local ToggleChest = Tabs.Main0:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main1:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea2 = Value
 end)
 Options.ToggleChest:SetValue(false)
 end
 
-local ToggleChestTween = Tabs.Main0:AddToggle("ToggleChestTween", {Title = "Auto Chest [Tween]", Default = false })
+local ToggleChestTween = Tabs.Main1:AddToggle("ToggleChestTween", {Title = "Auto Chest [Tween]", Default = false })
 ToggleChestTween:OnChanged(function(Value)
     AutoFarmChest = Value
 end)
@@ -2979,7 +2979,7 @@ end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Mastery
-local Mastery = Tabs.Main0:AddSection("Mastery Farm")
+local Mastery = Tabs.Main1:AddSection("Mastery Farm")
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
         Title = "Mastery Mode",
         Values = {"Level","Near Mobs",},
@@ -2993,7 +2993,7 @@ local Mastery = Tabs.Main0:AddSection("Mastery Farm")
         TypeMastery = Value
     end)
 
-    local ToggleMasteryFruit = Tabs.Main0:AddToggle("ToggleMasteryFruit", {Title = "Auto BF Mastery", Default = false })
+    local ToggleMasteryFruit = Tabs.Main1:AddToggle("ToggleMasteryFruit", {Title = "Auto BF Mastery", Default = false })
     ToggleMasteryFruit:OnChanged(function(Value)
         AutoFarmMasDevilFruit = Value
     end)
@@ -3001,7 +3001,7 @@ local Mastery = Tabs.Main0:AddSection("Mastery Farm")
 
  
 
-    local SliderHealt = Tabs.Main0:AddSlider("SliderHealt", {
+    local SliderHealt = Tabs.Main1:AddSlider("SliderHealt", {
         Title = "Health (%) Mob",
         Description = "",
         Default = 25,
