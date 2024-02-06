@@ -2507,7 +2507,7 @@ end
 -- Hehe
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
-    local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
+    local DropdownSelectWeapon = Tabs.Setting:AddDropdown("DropdownSelectWeapon", {
         Title = "Select Weapen",
         Values = {'Melee','Sword','Fruit'},
         Multi = false,
@@ -2559,7 +2559,7 @@ end
 
 
 local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
-    local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
+    local DropdownDelayAttack = Tabs.Setting:AddDropdown("DropdownDelayAttack", {
         Title = "Select Fast Attack",
         Values = listfastattack,
         Multi = false,
