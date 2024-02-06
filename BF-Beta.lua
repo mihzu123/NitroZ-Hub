@@ -2558,7 +2558,7 @@ end
     end)
 
 
-local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
+local listfastattack = {'Attack Safe','0','0,1','0.15','0.175'}
     local DropdownDelayAttack = Tabs.Main1:AddDropdown("DropdownDelayAttack", {
         Title = "Select Fast Attack",
         Values = listfastattack,
@@ -2567,18 +2567,22 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
     })
     DropdownDelayAttack:SetValue("Fast Attack")
     DropdownDelayAttack:OnChanged(function(Value)
-    _G.FastAttackFaiFao_Mode = Value
-	if _G.FastAttackFaiFao_Mode == "Fast Attack" then
-		_G.Fast_Delay = 0.17
-	elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
-		_G.Fast_Delay = 0.25
-	elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
-		_G.Fast_Delay = 0.05
+    _G.FastAttackDelay = Value
+	if _G.FastAttackDelay == "Attack Safe" then
+		_G.Fast_Delay = 0.5
+	elseif _G.FastAttackDelay == "0" then
+		_G.Fast_Delay = 0
+	elseif _G.FastAttackDelay == "0,1" then
+		_G.Fast_Delay = 0.1
+    elseif _G.FastAttackDelay == "0.15" then
+		_G.Fast_Delay = 0.15
+    elseif _G.FastAttackDelay == "0.175" then
+		_G.Fast_Delay = 0.175
 	end
 end)
 
 
-    local ToggleLevel = Tabs.Main3:AddToggle("ToggleLevel", {Title = "Auto Level", Default = false })
+    local ToggleLevel = Tabs.Main2:AddToggle("ToggleLevel", {Title = "Auto Level", Default = false })
     ToggleLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
@@ -3159,7 +3163,7 @@ end)
 local MiscFarm = Tabs.Main:AddSection("Misc Farm")
 
 if Third_Sea then
-local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {Title = "Auto Bone", Default = false })
+local ToggleBone = Tabs.Main2:AddToggle("ToggleBone", {Title = "Auto Bone", Default = false })
 ToggleBone:OnChanged(function(Value)
     _G.AutoBone = Value
 end)
@@ -3222,7 +3226,7 @@ spawn(function()
     end
 end)
 
-local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {Title = "Auto Cake Prince", Default = false })
+local ToggleCake = Tabs.Main2:AddToggle("ToggleCake", {Title = "Auto Cake Prince", Default = false })
 ToggleCake:OnChanged(function(Value)
  _G.CakePrince = Value
 end)
@@ -3286,7 +3290,7 @@ spawn(function()
     end)
 
 
-    local ToggleSpawnCake = Tabs.Main:AddToggle("ToggleSpawnCake", {Title = "Auto Spawn Cake Prince", Default = true })
+    local ToggleSpawnCake = Tabs.Main13:AddToggle("ToggleSpawnCake", {Title = "Auto Spawn Cake Prince", Default = true })
     ToggleSpawnCake:OnChanged(function(Value)
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner",Value)
     end)
