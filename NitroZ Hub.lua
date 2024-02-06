@@ -971,10 +971,10 @@ function CheckQuest()
         end
     end
 end
-local Section = M:AddSection({
-    Name = "Tự động Farm Level"
+local Section = F:AddSection({
+    Name = "Auto Farm Level"
 })
-M:AddParagraph("Main Farm","")
+F:AddParagraph("Main Farm","")
 
 ToggleFarm = F:AddToggle({
     Name = "Farm Level",
