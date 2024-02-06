@@ -2578,7 +2578,7 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
 end)
 
 
-    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Auto Level", Default = false })
+    local ToggleLevel = Tabs.Main3:AddToggle("ToggleLevel", {Title = "Auto Level", Default = false })
     ToggleLevel:OnChanged(function(Value)
         _G.AutoLevel = Value
     end)
