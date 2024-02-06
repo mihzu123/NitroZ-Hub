@@ -3160,8 +3160,6 @@ end
 end
 end)
 
-local MiscFarm = Tabs.Main:AddSection("Misc Farm")
-
 if Third_Sea then
 local ToggleBone = Tabs.Main2:AddToggle("ToggleBone", {Title = "Auto Bone", Default = false })
 ToggleBone:OnChanged(function(Value)
