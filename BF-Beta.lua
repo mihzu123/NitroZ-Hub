@@ -5176,10 +5176,8 @@ end)
 ]]
 -----------------------------------------------------------------------------------------------------------------------------------------------
 --Teleport
-local Teleport = Tabs.Teleport:AddSection("Teleport World")
-
-Tabs.Teleport:AddButton({
-    Title = "First Sea",
+Tabs.Main:AddButton({
+    Title = "Teleport Old World",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
@@ -5188,8 +5186,8 @@ Tabs.Teleport:AddButton({
 
 
 
-Tabs.Teleport:AddButton({
-    Title = "Second Sea",
+Tabs.Main:AddButton({
+    Title = "Teleport New World",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
@@ -5198,8 +5196,8 @@ Tabs.Teleport:AddButton({
 
 
 
-Tabs.Teleport:AddButton({
-    Title = "Third Sea",
+Tabs.Main:AddButton({
+    Title = "Teleport Third Sea",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
