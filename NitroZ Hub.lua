@@ -329,7 +329,7 @@ SF:AddToggle({
 
 OrionLib:MakeNotification({
 	Name = "NitroZ Hub",
-	Content = "Welcome to Apple Hub",
+	Content = "Welcome to NitroZ Hub",
 	Image = "rbxassetid://4483345998",
 	Time = 10
 })
@@ -971,6 +971,10 @@ function CheckQuest()
         end
     end
 end
+local Section = M:AddSection({
+    Name = "Tự động Farm Level"
+})
+M:AddParagraph("Main Farm","")
 
 ToggleFarm = F:AddToggle({
     Name = "Farm Level",
