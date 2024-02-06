@@ -15,7 +15,7 @@ local Window = Fluent:CreateWindow({
 local Tabs = {
     Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" }),
     Setting = Window:AddTab({ Title = "Setting Farm", Icon = "" }),
-    Main = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
+    Farm = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
 	Misc = Window:AddTab({ Title = "Tab Misc", Icon = "" }),
     MM = Window:AddTab({ Title = "Tab Material And M,ob", Icon = "" }),
     Webhook = Window:AddTab({ Title = "Tab Webhook"}),
@@ -2489,7 +2489,8 @@ ToggleButton.BorderSizePixel = 0
 ToggleButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Font = Enum.Font.SourceSans
-ToggleButton.Text = "Open|Close"
+ToggleButton.Text = "Open"
+ToggleButton.Image = "rbxassetid:16266430782"
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ToggleButton.TextSize = 14.000
 ToggleButton.Draggable = true
