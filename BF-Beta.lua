@@ -2560,7 +2560,7 @@ end
 
 local listfastattack = {'Attack Safe','0','0,1','0.15','0.175'}
     local DropdownDelayAttack = Tabs.Main1:AddDropdown("DropdownDelayAttack", {
-        Title = "Select Fast Attack",
+        Title = "Select Speed Attack",
         Values = listfastattack,
         Multi = false,
         Default = 1,
@@ -2645,7 +2645,7 @@ end)
 
 
 
-        local ToggleCandy = Tabs.Main:AddToggle("ToggleCandy", {Title = "Auto Farm Candy ( Only Max Level )", Default = false })
+        local ToggleCandy = Tabs.Main0:AddToggle("ToggleCandy", {Title = "Auto Farm Candy ( Only Max Level )", Default = false })
         ToggleCandy:OnChanged(function(Value)
            _G.AutoCandy = Value
         end)
@@ -2688,7 +2688,7 @@ end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-    local ToggleMobAura = Tabs.Main:AddToggle("ToggleMobAura", {Title = "Kill Near | Mob Aura", Default = false })
+    local ToggleMobAura = Tabs.Main0:AddToggle("ToggleMobAura", {Title = "Kill Near | Mob Aura", Default = false })
     ToggleMobAura:OnChanged(function(Value)
         _G.AutoNear = Value
     end)
@@ -2727,7 +2727,7 @@ end)
       end)
 
 
-    local ToggleCastleRaid = Tabs.Main:AddToggle("ToggleCastleRaid", {Title = "Auto Castle Raid | Pirates Castle", Default = false })
+    local ToggleCastleRaid = Tabs.Main0:AddToggle("ToggleCastleRaid", {Title = "Auto Castle Raid | Pirates Castle", Default = false })
     ToggleCastleRaid:OnChanged(function(Value)
         _G.CastleRaid = Value
     end)
@@ -2846,7 +2846,7 @@ function TPchest(P1)
 
 
 if Third_Sea then
-local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main0:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea3 = Value
 end)
@@ -2854,14 +2854,14 @@ Options.ToggleChest:SetValue(false)
 end
 
 if Second_Sea then
-local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
+local ToggleChest = Tabs.Main0:AddToggle("ToggleChest", {Title = "Auto Chest Stop If Has Items [Tp]", Default = false })
 ToggleChest:OnChanged(function(Value)
     _G.chestsea2 = Value
 end)
 Options.ToggleChest:SetValue(false)
 end
 
-local ToggleChestTween = Tabs.Main:AddToggle("ToggleChestTween", {Title = "Auto Chest [Tween]", Default = false })
+local ToggleChestTween = Tabs.Main0:AddToggle("ToggleChestTween", {Title = "Auto Chest [Tween]", Default = false })
 ToggleChestTween:OnChanged(function(Value)
     AutoFarmChest = Value
 end)
@@ -2901,7 +2901,6 @@ end)
 
       Tabs.Main:AddButton({
         Title = "Redeem All Code",
-        Description = "Redeem all code x2 exp",
         Callback = function()
             UseCode()
         end
@@ -2980,7 +2979,7 @@ end)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Mastery
-local Mastery = Tabs.Main:AddSection("Mastery Farm")
+local Mastery = Tabs.Main0:AddSection("Mastery Farm")
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
         Title = "Mastery Mode",
         Values = {"Level","Near Mobs",},
@@ -2994,7 +2993,7 @@ local Mastery = Tabs.Main:AddSection("Mastery Farm")
         TypeMastery = Value
     end)
 
-    local ToggleMasteryFruit = Tabs.Main:AddToggle("ToggleMasteryFruit", {Title = "Auto BF Mastery", Default = false })
+    local ToggleMasteryFruit = Tabs.Main0:AddToggle("ToggleMasteryFruit", {Title = "Auto BF Mastery", Default = false })
     ToggleMasteryFruit:OnChanged(function(Value)
         AutoFarmMasDevilFruit = Value
     end)
@@ -3002,7 +3001,7 @@ local Mastery = Tabs.Main:AddSection("Mastery Farm")
 
  
 
-    local SliderHealt = Tabs.Main:AddSlider("SliderHealt", {
+    local SliderHealt = Tabs.Main0:AddSlider("SliderHealt", {
         Title = "Health (%) Mob",
         Description = "",
         Default = 25,
@@ -3343,7 +3342,7 @@ end
     end)
 end
 
-local boss = Tabs.Main:AddSection("Boss Farm")
+local boss = Tabs.Main4:AddSection("Boss Farm")
 
     if First_Sea then
 		tableBoss = {"DauCoGhe Raid Boss [Lv. 7000]","The Gorilla King","Bobby","Yeti","Mob Leader","Vice Admiral","Warden","Chief Warden","Swan","Magma Admiral","Fishman Lord","Wysper","Thunder God","Cyborg","Saber Expert"}
@@ -3354,7 +3353,7 @@ local boss = Tabs.Main:AddSection("Boss Farm")
 	end
 
 
-    local DropdownBoss = Tabs.Main:AddDropdown("DropdownBoss", {
+    local DropdownBoss = Tabs.Main4:AddDropdown("DropdownBoss", {
         Title = "Dropdown",
         Values = tableBoss,
         Multi = false,
