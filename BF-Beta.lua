@@ -2488,8 +2488,7 @@ ToggleButton.BorderSizePixel = 0
 ToggleButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Font = Enum.Font.SourceSans
-ToggleButton.Text = ""
-ToggleButton.Image = "rbxassetid:16266430782"
+ToggleButton.Text = "Open"
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ToggleButton.TextSize = 14.000
 ToggleButton.Draggable = true
@@ -2508,30 +2507,9 @@ end
 -- Hehe
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
-local Farming = Tabs.Main:AddSection("Farming")
-local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
-
-    local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
-        Title = "Select Fast Attack",
-        Values = listfastattack,
-        Multi = false,
-        Default = 1,
-    })
-    DropdownDelayAttack:SetValue("Fast Attack")
-    DropdownDelayAttack:OnChanged(function(Value)
-    _G.FastAttackFaiFao_Mode = Value
-	if _G.FastAttackFaiFao_Mode == "Fast Attack" then
-		_G.Fast_Delay = 0.17
-	elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
-		_G.Fast_Delay = 0.25
-	elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
-		_G.Fast_Delay = 0.05
-	end
-end)
-
     local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
-        Title = "Weapon",
-        Values = {'Melee','Sword','Blox Fruit'},
+        Title = "Select Weapen",
+        Values = {'Melee','Sword','Fruit'},
         Multi = false,
         Default = 1,
     })
@@ -2578,6 +2556,26 @@ end)
             end)
         end
     end)
+
+
+local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
+    local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
+        Title = "Select Fast Attack",
+        Values = listfastattack,
+        Multi = false,
+        Default = 1,
+    })
+    DropdownDelayAttack:SetValue("Fast Attack")
+    DropdownDelayAttack:OnChanged(function(Value)
+    _G.FastAttackFaiFao_Mode = Value
+	if _G.FastAttackFaiFao_Mode == "Fast Attack" then
+		_G.Fast_Delay = 0.17
+	elseif _G.FastAttackFaiFao_Mode == "Normal Attack" then
+		_G.Fast_Delay = 0.25
+	elseif _G.FastAttackFaiFao_Mode == "Super Fast Attack" then
+		_G.Fast_Delay = 0.05
+	end
+end)
 
 
     local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {Title = "Auto Level", Default = false })
