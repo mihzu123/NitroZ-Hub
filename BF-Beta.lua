@@ -13,20 +13,20 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.End
 })
 local Tabs = {
-    Shop = Window:AddTab({ Title = "Tab Shop", Icon = "" }),
-    Setting = Window:AddTab({ Title = "Setting Farm", Icon = "" }),
-    Farm = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
-	Misc = Window:AddTab({ Title = "Tab Misc", Icon = "" }),
-    MM = Window:AddTab({ Title = "Tab Material And M,ob", Icon = "" }),
-    Webhook = Window:AddTab({ Title = "Tab Webhook"}),
-    SE = Window:AddTab({ Title = "Tab Sea Event", Icon = "" }),
-    Raid = Window:AddTab({ Title = "Tab Raid And DF", Icon = "" }),
-    Race = Window:AddTab({ Title = "Tab Race", Icon = "" }),
-    SS = Window:AddTab({ Title = "Tab Status And Sever", Icon = "" }),
-    Items = Window:AddTab({ Title = "Tab Items", Icon = "" }),
-    LP = Window:AddTab({ Title = "Tab Local Player", Icon = "" }),
-    PVP = Window:AddTab({ Title = "Tab PVP", Icon = "" }),
-    Setting = Window:AddTab({ Title = "Tab Setting", Icon = "" }),
+    Main = Window:AddTab({ Title = "Tab Shop", Icon = "" }),
+    Main1 = Window:AddTab({ Title = "Setting Farm", Icon = "" }),
+    Main2 = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
+	Main3 = Window:AddTab({ Title = "Tab Misc", Icon = "" }),
+    Main4 = Window:AddTab({ Title = "Tab Material And M,ob", Icon = "" }),
+    Main5 = Window:AddTab({ Title = "Tab Webhook"}),
+    Main6 = Window:AddTab({ Title = "Tab Sea Event", Icon = "" }),
+    Main7 = Window:AddTab({ Title = "Tab Raid And DF", Icon = "" }),
+    Main8 = Window:AddTab({ Title = "Tab Race", Icon = "" }),
+    Main9 = Window:AddTab({ Title = "Tab Status And Sever", Icon = "" }),
+    Main10 = Window:AddTab({ Title = "Tab Items", Icon = "" }),
+    Main11 = Window:AddTab({ Title = "Tab Local Player", Icon = "" }),
+    Main12 = Window:AddTab({ Title = "Tab PVP", Icon = "" }),
+    Main13 = Window:AddTab({ Title = "Tab Setting", Icon = "" }),
 }
 local Options = Fluent.Options
 do
@@ -2507,7 +2507,7 @@ end
 -- Hehe
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Create Tabs
-    local DropdownSelectWeapon = Tabs.Setting:AddDropdown("DropdownSelectWeapon", {
+    local DropdownSelectWeapon = Tabs.Main1:AddDropdown("DropdownSelectWeapon", {
         Title = "Select Weapen",
         Values = {'Melee','Sword','Fruit'},
         Multi = false,
@@ -2559,7 +2559,7 @@ end
 
 
 local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
-    local DropdownDelayAttack = Tabs.Setting:AddDropdown("DropdownDelayAttack", {
+    local DropdownDelayAttack = Tabs.Main1:AddDropdown("DropdownDelayAttack", {
         Title = "Select Fast Attack",
         Values = listfastattack,
         Multi = false,
