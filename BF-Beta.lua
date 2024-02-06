@@ -2480,7 +2480,6 @@ local ToggleButtonHUI = Instance.new("UICorner")
 ToggleUI.Name = "ToggleUI"
 ToggleUI.Parent = game.CoreGui
 ToggleUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
 ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = ToggleUI
 ToggleButton.BackgroundColor3 = Color3.fromRGB(30,20,20)
@@ -2489,7 +2488,7 @@ ToggleButton.BorderSizePixel = 0
 ToggleButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
 ToggleButton.Size = UDim2.new(0, 50, 0, 50)
 ToggleButton.Font = Enum.Font.SourceSans
-ToggleButton.Text = "Open"
+ToggleButton.Text = ""
 ToggleButton.Image = "rbxassetid:16266430782"
 ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ToggleButton.TextSize = 14.000
