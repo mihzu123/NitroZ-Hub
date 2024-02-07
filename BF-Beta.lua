@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     Title = "NitroZ Hub-Blox Fruit",
     SubTitle = "by mnghia",
     TabWidth = 160,
-    Size = UDim2.fromOffset(590, 380),
+    Size = UDim2.fromOffset(600, 250),
     Acrylic = false,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.End
@@ -225,7 +225,7 @@ if _G.AutoLevel and (CFrameMon.Position - game.Players.LocalPlayer.Character.Hum
 game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
 end
 elseif Lv == 10 or Lv <= 474 or SelectMonster == "God's Guard" or SelectArea == 'Sky Island' then -- God's Guard
-Ms = "God's Guard"
+Ms = "God'  s Guard"
 NameQuest = "SkyExp1Quest"
 QuestLv = 1
 NameMon = "God's Guard"
