@@ -3383,7 +3383,7 @@ end
 end
 end)
 
-
+if Third_Sea then
 
 local ToggleBone = Tabs.Main2:AddToggle("ToggleBone", {Title = "Auto Bone", Default = false })
 ToggleBone:OnChanged(function(Value)
@@ -3520,7 +3520,7 @@ spawn(function()
 end
 
     if Second_Sea then
-    local ToggleVatChatKiDi = Tabs.Main:AddToggle("ToggleVatChatKiDi", {Title = "Auto Ectoplasm", Default = false })
+    local ToggleVatChatKiDi = Tabs.Main2:AddToggle("ToggleVatChatKiDi", {Title = "Auto Ectoplasm", Default = false })
     ToggleVatChatKiDi:OnChanged(function(Value)
         _G.Ectoplasm = Value
     end)
@@ -3678,7 +3678,7 @@ local boss = Tabs.Main4:AddSection("Boss Farm")
         }
         end
 
-    local DropdownMaterial = Tabs.Main4:AddDropdown("DropdownMaterial", {
+    local DropdownMaterial = Tabs.Main1:AddDropdown("DropdownMaterial", {
         Title = "Dropdown",
         Values = MaterialList,
         Multi = false,
@@ -3691,7 +3691,7 @@ local boss = Tabs.Main4:AddSection("Boss Farm")
         SelectMaterial = Value
     end)
 
-    local ToggleMaterial = Tabs.Main4:AddToggle("ToggleMaterial", {Title = "Auto Material", Default = false })
+    local ToggleMaterial = Tabs.Main1:AddToggle("ToggleMaterial", {Title = "Auto Material", Default = false })
 
     ToggleMaterial:OnChanged(function(Value)
         _G.AutoMaterial = Value
