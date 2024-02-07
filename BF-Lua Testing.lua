@@ -2832,7 +2832,7 @@ Tabs.Main3:AddParagraph({
 
 
 local ToggleLevel = Tabs.Main3:AddToggle("ToggleLevel", {
-    Title = "Level Farm",
+    Title = "Cày Cấp Độ",
     Description = "",
     Default = false })
 ToggleLevel:OnChanged(function(Value)
@@ -2890,6 +2890,9 @@ spawn(function()
     end
     end
     end)
+
+
+
 
     if Third_Sea then
         local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {
