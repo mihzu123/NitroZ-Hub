@@ -2895,7 +2895,7 @@ spawn(function()
 
 
     if Third_Sea then
-        local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {
+        local ToggleBone = Tabs.Main3:AddToggle("ToggleBone", {
             Title = "Cày Xương",
             Description = "", 
             Default = false })
@@ -2965,7 +2965,7 @@ spawn(function()
                 end
             end
         end)
-    local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {
+    local ToggleCake = Tabs.Main3:AddToggle("ToggleCake", {
         Title = "Farm Katakuri",
         Description = "", 
         Default = false })
@@ -3030,7 +3030,7 @@ spawn(function()
         end)
     
     
-        local ToggleSpawnCake = Tabs.Main:AddToggle("ToggleSpawnCake", {
+        local ToggleSpawnCake = Tabs.Main3:AddToggle("ToggleSpawnCake", {
             Title = "Auto Spawn Cake Price",
             Description = "", 
             Default = true })
@@ -3056,5 +3056,5 @@ spawn(function()
       end
     end)
     end
-    
+
     
