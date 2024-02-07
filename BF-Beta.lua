@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     Title = "NitroZ Hub-Blox Fruit",
     SubTitle = "by mnghia",
     TabWidth = 160,
-    Size = UDim2.fromOffset(530, 350),
+    Size = UDim2.fromOffset(705, 395),
     Acrylic = false,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.End
@@ -2558,7 +2558,7 @@ end
     end)
 
 
-local listfastattack = {'Attack Safe','0','0,1','0.15','0.175'}
+local listfastattack = {'Attack Safe','0','0.1','0.15','0.175'}
     local DropdownDelayAttack = Tabs.Main1:AddDropdown("DropdownDelayAttack", {
         Title = "Select Speed Attack",
         Values = listfastattack,
