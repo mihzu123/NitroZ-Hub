@@ -2827,9 +2827,11 @@ local ToggleV4 = Tabs.Main2:AddToggle("AutoTurnOnV4", {
     Title = "Auto Turn On V4", 
     Default = false })
 
-    Toggle:OnChanged(function(value)
+    ToggleV4:OnChanged(function(value)
         _G.V4 = Value
         end)
+        Options.ToggleV4:SetValue(false)
+        
         spawn(function()
             while wait() do
                 pcall(function()
@@ -2842,13 +2844,15 @@ local ToggleV4 = Tabs.Main2:AddToggle("AutoTurnOnV4", {
             end
         end)
 
-local Toggle = Tabs.Main2:AddToggle("AutoTurnOnV3", {
+local ToggleV3 = Tabs.Main2:AddToggle("AutoTurnOnV3", {
     Title = "Auto Turn On V3", 
     Default = false })
 
-Toggle:OnChanged(function(value)
+ToggleV3:OnChanged(function(value)
         _G.V3 = Value
         end)
+        Options.Togglev3:SetValue(false)
+
         spawn(function()
             while wait() do
                 pcall(function()
