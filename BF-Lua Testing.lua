@@ -2929,8 +2929,8 @@ spawn(function()
     end)
 
     if Third_Sea then
-        local ToggleBone = Tabs.Main3:AddToggle("ToggleBone", {
-            Title = "Farm Bone",
+        local ToggleBone = Tabs.Main:AddToggle("ToggleBone", {
+            Title = "Cày Xương",
             Description = "", 
             Default = false })
         ToggleBone:OnChanged(function(Value)
