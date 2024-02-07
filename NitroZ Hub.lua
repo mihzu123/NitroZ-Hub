@@ -2727,35 +2727,8 @@ Callback = function()
 })
 
 
-
-
-
-
-
-local Farming = Tabs.Main:AddSection("Farming")
-local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
-
-    local DropdownDelayAttack = Tabs.Main:AddDropdown("DropdownDelayAttack", {
-        Title = "Chọn Tốc Độ Đánh",
-        Description = "",
-        Values = listfastattack,
-        Multi = false,
-        Default = 1,
-    })
-    DropdownDelayAttack:SetValue("Fast Attack")
-    DropdownDelayAttack:OnChanged(function(Value)
-    _G.FastAttackZueszYTB_Mode = Value
-	if _G.FastAttackZueszYTB_Mode == "Fast Attack" then
-		_G.Fast_Delay = 0.12
-	elseif _G.FastAttackZueszYTB_Mode == "Normal Attack" then
-		_G.Fast_Delay = 0.2
-	elseif _G.FastAttackZueszYTB_Mode == "Super Fast Attack" then
-		_G.Fast_Delay = 0.05
-	end
-end)
-
-    local DropdownSelectWeapon = Tabs.Main:AddDropdown("DropdownSelectWeapon", {
-        Title = "Chọn Vũ Khí",
+    local DropdownSelectWeapon = Tabs.Main2:AddDropdown("DropdownSelectWeapon", {
+        Title = "Selec Weapen",
         Description = "",
         Values = {'Melee','Sword','Blox Fruit'},
         Multi = false,
@@ -2806,8 +2779,33 @@ end)
     end)
 
 
-    local ToggleLevel = Tabs.Main:AddToggle("ToggleLevel", {
-        Title = "Cày Cấp Độ",
+
+
+local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
+
+    local DropdownDelayAttack = Tabs.Main2:AddDropdown("DropdownDelayAttack", {
+        Title = "Selec Speed Attack",
+        Description = "",
+        Values = listfastattack,
+        Multi = false,
+        Default = 1,
+    })
+    DropdownDelayAttack:SetValue("Fast Attack")
+    DropdownDelayAttack:OnChanged(function(Value)
+    _G.FastAttack_Mode = Value
+	if _G.FastAttack_Mode == "Fast Attack" then
+		_G.Fast_Delay = 0.2
+	elseif _G.FastAttack_Mode == "Normal Attack" then
+		_G.Fast_Delay = 0.5
+	elseif _G.FastAttack_Mode == "Super Fast Attack" then
+		_G.Fast_Delay = 0.1
+	end
+end)
+
+
+
+    local ToggleLevel = Tabs.Main3:AddToggle("ToggleLevel", {
+        Title = "Level Farm",
         Description = "",
         Default = false })
     ToggleLevel:OnChanged(function(Value)
