@@ -3383,7 +3383,8 @@ end
 end
 end)
 
-if Third_Sea then
+
+
 local ToggleBone = Tabs.Main2:AddToggle("ToggleBone", {Title = "Auto Bone", Default = false })
 ToggleBone:OnChanged(function(Value)
     _G.AutoBone = Value
