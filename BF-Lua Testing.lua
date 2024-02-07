@@ -2473,7 +2473,7 @@ do
         end
 
 
-        Tabs.Main:AddButton({
+        Tabs.Main1:AddButton({
             Title = "Redeem All Code",
             Callback = function()
                 UseCode()
@@ -2730,7 +2730,7 @@ do
     })
     
 
-    local DropdownSelectWeapon = Tabs.Main1:AddDropdown("DropdownSelectWeapon", {
+    local DropdownSelectWeapon = Tabs.Main2:AddDropdown("DropdownSelectWeapon", {
         Title = "Select Weapen",
         Values = {'Melee','Sword','Fruit'},
         Multi = false,
@@ -2782,7 +2782,7 @@ do
 
 
 local listfastattack = {'Attack Safe','0','0.1','0.15','0.175'}
-    local DropdownDelayAttack = Tabs.Main1:AddDropdown("DropdownDelayAttack", {
+    local DropdownDelayAttack = Tabs.Main2:AddDropdown("DropdownDelayAttack", {
         Title = "Select Speed Attack",
         Values = listfastattack,
         Multi = false,
@@ -2842,7 +2842,7 @@ local ToggleV4 = Tabs.Main2:AddToggle("AutoTurnOnV4", {
             end
         end)
 
-local Toggle = Tabs.Main:AddToggle("AutoTurnOnV3", {
+local Toggle = Tabs.Main2:AddToggle("AutoTurnOnV3", {
     Title = "Auto Turn On V3", 
     Default = false })
 
@@ -3018,4 +3018,3 @@ local listselectteam = {'Pirate','Marines'}
     end)
     end
     end
-    
