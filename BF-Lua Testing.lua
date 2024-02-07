@@ -3033,7 +3033,6 @@ spawn(function()
     end
   end)
 
-.
 local Pos = Tabs.Main14:AddSection("Khoảng Cách Farm")
 
 local SliderPosX = Tabs.Main14:AddSlider("SliderPosX", {
@@ -3083,3 +3082,4 @@ SliderPosZ:OnChanged(function(Value)
      posZ = Value
 end)
 SliderPosZ:SetValue(0)
+end
