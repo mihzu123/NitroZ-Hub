@@ -2927,9 +2927,8 @@ end)
 
 
 
-    Tabs.Main:AddButton({
+    Tabs.Main11:AddButton({
         Title = "Fps Booster",
-        Description = "Boost your fps",
         Callback = function()
             FPSBooster()
         end
@@ -2980,7 +2979,7 @@ end)
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Mastery
 local Mastery = Tabs.Main1:AddSection("Mastery Farm")
-    local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
+    local DropdownMastery = Tabs.Main1:AddDropdown("DropdownMastery", {
         Title = "Mastery Mode",
         Values = {"Level","Near Mobs",},
         Multi = false,
@@ -3365,7 +3364,7 @@ local boss = Tabs.Main4:AddSection("Boss Farm")
 		_G.SelectBoss = Value
     end)
 
-	local ToggleAutoFarmBoss = Tabs.Main:AddToggle("ToggleAutoFarmBoss", {Title = "Kill Boss", Default = false })
+	local ToggleAutoFarmBoss = Tabs.Main4:AddToggle("ToggleAutoFarmBoss", {Title = "Kill Boss", Default = false })
 
     ToggleAutoFarmBoss:OnChanged(function(Value)
 		_G.AutoBoss = Value
@@ -3456,7 +3455,7 @@ local boss = Tabs.Main4:AddSection("Boss Farm")
         }
         end
 
-    local DropdownMaterial = Tabs.Main:AddDropdown("DropdownMaterial", {
+    local DropdownMaterial = Tabs.Main4:AddDropdown("DropdownMaterial", {
         Title = "Dropdown",
         Values = MaterialList,
         Multi = false,
@@ -3469,7 +3468,7 @@ local boss = Tabs.Main4:AddSection("Boss Farm")
         SelectMaterial = Value
     end)
 
-    local ToggleMaterial = Tabs.Main:AddToggle("ToggleMaterial", {Title = "Auto Material", Default = false })
+    local ToggleMaterial = Tabs.Main4:AddToggle("ToggleMaterial", {Title = "Auto Material", Default = false })
 
     ToggleMaterial:OnChanged(function(Value)
         _G.AutoMaterial = Value
