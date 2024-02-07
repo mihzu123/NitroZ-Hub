@@ -17,7 +17,7 @@ local Tabs = {
     Main1 = Window:AddTab({ Title = "Setting Farm", Icon = "" }),
     Main2 = Window:AddTab({ Title = "Tab Farm", Icon = "" }),
 	Main3 = Window:AddTab({ Title = "Tab Misc", Icon = "" }),
-    Main4 = Window:AddTab({ Title = "Tab Material And M,ob", Icon = "" }),
+    Main4 = Window:AddTab({ Title = "Tab Material And Mob", Icon = "" }),
     Main5 = Window:AddTab({ Title = "Tab Webhook"}),
     Main6 = Window:AddTab({ Title = "Tab Sea Event", Icon = "" }),
     Main7 = Window:AddTab({ Title = "Tab Raid And DF", Icon = "" }),
@@ -2563,7 +2563,7 @@ local listfastattack = {'Attack Safe','0','0,1','0.15','0.175'}
         Title = "Select Speed Attack",
         Values = listfastattack,
         Multi = false,
-        Default = 1,
+        Default = 3,
     })
     DropdownDelayAttack:SetValue("Fast Attack")
     DropdownDelayAttack:OnChanged(function(Value)
@@ -3340,6 +3340,33 @@ end
         end
     end)
 end
+Tabs.Main:AddButton({
+    Title = "Teleport Old World",
+    Desscription = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
+    end
+})
+
+
+
+Tabs.Main:AddButton({
+    Title = "Teleport New World",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
+    end
+})
+
+
+
+Tabs.Main:AddButton({
+    Title = "Teleport Third Sea",
+    Description = "",
+    Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
+    end
+})
 
 local boss = Tabs.Main4:AddSection("Boss Farm")
 
@@ -3439,9 +3466,6 @@ local boss = Tabs.Main4:AddSection("Boss Farm")
             end
         end
     end)
-
-
-    local Material = Tabs.Main:AddSection("Material Farm")
 
     if First_Sea then
         MaterialList = {
@@ -4311,7 +4335,6 @@ end)
     end)
 end
 
-local Items = Tabs.Main:AddSection("Items Farm")
 
 if Third_Sea then
     local ToggleHallow = Tabs.Main:AddToggle("ToggleHallow", {Title = "Auto Hallow Scythe [Fully]", Default = false })
@@ -5176,33 +5199,6 @@ end)
 ]]
 -----------------------------------------------------------------------------------------------------------------------------------------------
 --Teleport
-Tabs.Main:AddButton({
-    Title = "Teleport Old World",
-    Desscription = "",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
-    end
-})
-
-
-
-Tabs.Main:AddButton({
-    Title = "Teleport New World",
-    Description = "",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
-    end
-})
-
-
-
-Tabs.Main:AddButton({
-    Title = "Teleport Third Sea",
-    Description = "",
-    Callback = function()
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
-    end
-})
 
 
 
