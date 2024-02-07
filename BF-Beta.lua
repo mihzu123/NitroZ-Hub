@@ -2948,7 +2948,14 @@ Tabs.Main:AddButton({
     end
 })
 
-local Farming = Tabs.Main:AddSection("Fighting Shop")
+
+
+Tabs.Main:AddParagraph({
+    Title = "",
+    Content = "Fighting Shop"
+})
+
+
 
 Tabs.Main:AddButton({
 	Title = "Black Leg",
@@ -3081,7 +3088,23 @@ Tabs.Main:AddButton({
 
 
 
-local Mastery = Tabs.Main:AddSection("Misc Shop")
+Tabs.Main:AddParagraph({
+    Title = "",
+    Content = "Misc Shop"
+})
+
+
+
+Tabs.Main:AddButton({
+	Title = "Reroll Race",
+	Description = "",
+	Callback = function()
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","1")
+		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","2")
+	end
+})
+
+
 
 Tabs.Main:AddButton({
 	Title = "Refund Stats",
@@ -3091,14 +3114,42 @@ Tabs.Main:AddButton({
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","2")
 	end
 })
-Tabs.Main:AddButton({
-	Title = "Reroll Race",
-	Description = "",
-	Callback = function()
-		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","1")
-		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","2")
-	end
+
+
+
+Tabs.Main.AddButton({
+    Title = "Buy Race Cyborg ",
+    Descripttion = "",
+    Callback = function()
+        local a = {
+            [1] = "CyborgTrainer",
+            [2] = "Buy"
+        }
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(a))
+      end   
 })
+
+
+
+Tabs.Main.AddButton({
+    Title = "Buy Race Ghoul ",
+    Descripttion = "",
+    Callback = function()
+        local a = {
+            [1] = "Ectoplasm",
+            [2] = "BuyCheck",
+            [3] = 4
+        }
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(a))
+        local a = {
+            [1] = "Ectoplasm",
+            [2] = "Change",
+            [3] = 4
+        }
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer(unpack(a))
+      end    
+})
+
 
 
     Tabs.Main11:AddButton({
