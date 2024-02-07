@@ -2999,22 +2999,6 @@ spawn(function()
                 end
             end
         end)
-local listselectteam = {'Pirate','Marines'} 
-    local Dropdown = Tabs.Main:AddDropdown("SelectTeam", {
-        Title = "Select Team",
-        Values = listselectteam,
-        Multi = false,
-        Default = 2,
-    })
-    
-    Dropdown:SetValue("Marines")
-    Dropdown:OnChanged(function(Value)
-        _G.SelectTeam= Value
-        if _G.SelectTeamNitroZHub_Mode == "Pirates" then
-            _G.SetTeam = Pirtates
-        elseif _G.SelectTeamNitroZHub_Mode == "Marines" then
-            _G.SetTeam = Marines
-        end
-    end)
-    end
-    end
+end
+end
+
