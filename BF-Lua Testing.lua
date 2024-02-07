@@ -3033,9 +3033,9 @@ spawn(function()
     end
   end)
 
-  local Pos = Tabs.Setting:AddSection("Khoảng Cách Farm")
+  local Pos = Tabs.Main14:AddSection("Khoảng Cách Farm")
 
-  local SliderPosX = Tabs.Setting:AddSlider("SliderPosX", {
+  local SliderPosX = Tabs.Main14:AddSlider("SliderPosX", {
       Title = "Hướng X",
       Description = "",
       Default = 0,
@@ -3051,7 +3051,7 @@ spawn(function()
   end)
   SliderPosX:SetValue(0)
   
-  local SliderPosY = Tabs.Setting:AddSlider("SliderPosY", {
+  local SliderPosY = Tabs.Main14:AddSlider("SliderPosY", {
       Title = "Hướng Y",
       Description = "",
       Default = 30,
@@ -3067,7 +3067,7 @@ spawn(function()
   end)
   SliderPosY:SetValue(30)
   
-  local SliderPosZ = Tabs.Setting:AddSlider("SliderPosZ", {
+  local SliderPosZ = Tabs.Main14:AddSlider("SliderPosZ", {
       Title = "Hướng Z",
       Description = "",
       Default = 0,
