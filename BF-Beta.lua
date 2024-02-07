@@ -5178,7 +5178,7 @@ end)
 --Teleport
 Tabs.Main:AddButton({
     Title = "Teleport Old World",
-    Description = "",
+    Desscription = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
     end
