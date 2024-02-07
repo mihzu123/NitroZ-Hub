@@ -2823,48 +2823,7 @@ Toggle:OnChanged(function(value)
         end
     end)
 
-local ToggleV4 = Tabs.Main2:AddToggle("AutoTurnOnV4", {
-    Title = "Auto Turn On V4", 
-    Default = false })
 
-    ToggleV4:OnChanged(function(value)
-        _G.V4 = Value
-        end)
-        Options.ToggleV4:SetValue(false)
-        
-        spawn(function()
-            while wait() do
-                pcall(function()
-                    if _G.V4 then
-                        game:GetService("VirtualInputManager"):SendKeyEvent(true,"Y",false,game)
-                        wait(0.1)
-                        game:GetService("VirtualInputManager"):SendKeyEvent(false,"Y",false,game)
-                    end
-                end)
-            end
-        end)
-
-local ToggleV3 = Tabs.Main2:AddToggle("AutoTurnOnV3", {
-    Title = "Auto Turn On V3", 
-    Default = false })
-
-ToggleV3:OnChanged(function(value)
-        _G.V3 = Value
-        end)
-        Options.Togglev3:SetValue(false)
-
-        spawn(function()
-            while wait() do
-                pcall(function()
-                    if _G.V3 then
-                        game:GetService("VirtualInputManager"):SendKeyEvent(true,"T",false,game)
-                        wait(0.1)
-                        game:GetService("VirtualInputManager"):SendKeyEvent(false,"T",false,game)
-                    end
-                end)
-            end
-        end)
-        
 
 Tabs.Main3:AddParagraph({
     Title = "",
