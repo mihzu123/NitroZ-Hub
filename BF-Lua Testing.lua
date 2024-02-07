@@ -2499,7 +2499,7 @@ do
         UseCode("TantaiGaming")
         UseCode("STRAWHATMAINE")
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Teleport Old World",
         Desscription = "",
         Callback = function()
@@ -2509,7 +2509,7 @@ do
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Teleport New World",
         Description = "",
         Callback = function()
@@ -2519,7 +2519,7 @@ do
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Teleport Third Sea",
         Description = "",
         Callback = function()
@@ -2529,14 +2529,14 @@ do
     
     
     
-    Tabs.Main:AddParagraph({
+    Tabs.Main1:AddParagraph({
         Title = "",
         Content = "Fighting Shop"
     })
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Black Leg",
         Description = "",
         Callback = function()
@@ -2544,7 +2544,7 @@ do
         end
     })
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Fishman Karate",
         Description = "",
         Callback = function()
@@ -2552,7 +2552,7 @@ do
         end
     })
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Electro",
         Description = "",
         Callback = function()
@@ -2560,7 +2560,7 @@ do
         end
     })
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Dragon Claw",
         Description = "",
         Callback = function()
@@ -2568,21 +2568,21 @@ do
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","2")
         end
     })
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Superhuman",
         Description = "",
         Callback = function()
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
         end
     })
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Death Step",
         Description = "",
         Callback = function()
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
         end
     })
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Sharkman Karate",
         Description = "",
         Callback = function()
@@ -2590,21 +2590,21 @@ do
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate")
         end
     })
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Electric Claw",
         Description = "",
         Callback = function()
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
         end
     })
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Dragon Talon",
         Description = "",
         Callback = function()
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
         end
     })
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "God Human",
         Description = "",
         Callback = function()
@@ -2612,7 +2612,7 @@ do
         end
     })
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Sanguine Art",
         Description = "",
         Callback = function()
@@ -2620,14 +2620,14 @@ do
         end
     })
     
-    Tabs.Main:AddParagraph({
+    Tabs.Main1:AddParagraph({
         Title = "",
         Content = "Abilibie Shop"
     })
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Sky Jump[ $10,000 Beli ]",
         Description = "",
         Callback = function()
@@ -2637,7 +2637,7 @@ do
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Buso Haki [ $25,000 Beli ]",
         Description = "",
         Callback = function()
@@ -2647,7 +2647,7 @@ do
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Observation haki [ $750,000 Beli ]",
         Description = "",
         Callback = function()
@@ -2657,7 +2657,7 @@ do
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Soru [ $100,000 Beli ]",
         Description = "",
         Callback = function()
@@ -2667,14 +2667,14 @@ do
     
     
     
-    Tabs.Main:AddParagraph({
+    Tabs.Main1:AddParagraph({
         Title = "",
         Content = "Misc Shop"
     })
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Reroll Race",
         Description = "",
         Callback = function()
@@ -2685,7 +2685,7 @@ do
     
     
     
-    Tabs.Main:AddButton({
+    Tabs.Main1:AddButton({
         Title = "Refund Stats",
         Description = "",
         Callback = function()
@@ -2696,7 +2696,7 @@ do
     
     
     
-    Tabs.Main.AddButton({
+    Tabs.Main1:AddButton({
         Title = "Buy Race Cyborg ",
         Descripttion = "",
         Callback = function()
@@ -2710,7 +2710,7 @@ do
     
     
     
-    Tabs.Main.AddButton({
+    Tabs.Main1:AddButton({
         Title = "Buy Race Ghoul ",
         Descripttion = "",
         Callback = function()
