@@ -3033,53 +3033,53 @@ spawn(function()
     end
   end)
 
-  local Pos = Tabs.Main14:AddSection("Khoảng Cách Farm")
+.
+local Pos = Tabs.Main14:AddSection("Khoảng Cách Farm")
 
-  local SliderPosX = Tabs.Main14:AddSlider("SliderPosX", {
-      Title = "Hướng X",
-      Description = "",
-      Default = 0,
-      Min = -60,
-      Max = 60,
-      Rounding = 1,
-      Callback = function(Value)
-        posX = Value
-      end
-  })
-  SliderPosX:OnChanged(function(Value)
-    posX = Value
-  end)
-  SliderPosX:SetValue(0)
-  
-  local SliderPosY = Tabs.Main14:AddSlider("SliderPosY", {
-      Title = "Hướng Y",
-      Description = "",
-      Default = 30,
-      Min = -60,
-      Max = 60,
-      Rounding = 1,
-      Callback = function(Value)
-        posY = Value
-      end
-  })
-  SliderPosY:OnChanged(function(Value)
-    posY = Value
-  end)
-  SliderPosY:SetValue(30)
-  
-  local SliderPosZ = Tabs.Main14:AddSlider("SliderPosZ", {
-      Title = "Hướng Z",
-      Description = "",
-      Default = 0,
-      Min = -60,
-      Max = 60,
-      Rounding = 1,
-      Callback = function(Value)
-        posZ = Value
-      end
-  })
-  SliderPosZ:OnChanged(function(Value)
-       posZ = Value
-  end)
-  SliderPosZ:SetValue(0)
-  end
+local SliderPosX = Tabs.Main14:AddSlider("SliderPosX", {
+    Title = "Hướng X",
+    Description = "",
+    Default = 0,
+    Min = -60,
+    Max = 60,
+    Rounding = 1,
+    Callback = function(Value)
+      posX = Value
+    end
+})
+SliderPosX:OnChanged(function(Value)
+  posX = Value
+end)
+SliderPosX:SetValue(0)
+
+local SliderPosY = Tabs.Main14:AddSlider("SliderPosY", {
+    Title = "Hướng Y",
+    Description = "",
+    Default = 30,
+    Min = -60,
+    Max = 60,
+    Rounding = 1,
+    Callback = function(Value)
+      posY = Value
+    end
+})
+SliderPosY:OnChanged(function(Value)
+  posY = Value
+end)
+SliderPosY:SetValue(30)
+
+local SliderPosZ = Tabs.Main14:AddSlider("SliderPosZ", {
+    Title = "Hướng Z",
+    Description = "",
+    Default = 0,
+    Min = -60,
+    Max = 60,
+    Rounding = 1,
+    Callback = function(Value)
+      posZ = Value
+    end
+})
+SliderPosZ:OnChanged(function(Value)
+     posZ = Value
+end)
+SliderPosZ:SetValue(0)
